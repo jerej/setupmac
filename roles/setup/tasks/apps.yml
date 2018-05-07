@@ -9,6 +9,7 @@
     url: "{{item.value.url}}"
     dest: "{{item.value.dest}}"
   with_dict: "{{downloads}}"    
+  when: downloads is defined
 
 - name: start installing homebrew applications
   homebrew:
