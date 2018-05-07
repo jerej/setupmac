@@ -3,6 +3,8 @@
 general:
   local_home: "{{ lookup('env','HOME') }}"
 
+# brew install lastpass-cli --with-pinentry
+
 # homebrew applications
 applications:
   - autojump
@@ -13,40 +15,46 @@ applications:
   - wget
   - kubectl
   - kubernetes-helm
-  - zsh
+  #- zsh
   - go
   - vim
+  - macvim
   - hugo
-  - saltstack
+  #- saltstack
   - neovim
   - ag 
   - ctags
   - terraform
+  - ipcalc
 
 # homebrew cask applications
 cask_applications:
   - google-chrome
   - slack
-  - iterm2
+  #- iterm2
   - caffeine
-  - docker
+  #- docker
   - minikube
   - vagrant
-  - emacs
-  - garmin-express
-  - 1password
+  #- emacs
+  #- garmin-express
+  #- 1password
   - alfred
   - virtualbox
-  - spotify
-  - steam
+  #- spotify
+  #- steam
+  - Caskroom/cask/xquartz
 
-downloads:
-   zwift:
-     name: Zwift
-     url: http://cdn.zwift.com/app/ZwiftOSX.dmg
-     dest: "{{general.local_home}}/Downloads/ZwiftOSX.dmg"
-   suuntolink:
-     name: Suunto Movescount link
-     url: http://suuntolink.static.movescount.com/Suuntolink_installer.dmg
-     dest: "{{general.local_home}}/Downloads/Suuntolink_installer.dmg"
+# brew list
+# brew cask list
+
+#downloads:
+#   zwift:
+#     name: Zwift
+#     url: http://cdn.zwift.com/app/ZwiftOSX.dmg
+#     dest: "{{general.local_home}}/Downloads/ZwiftOSX.dmg"
+#   suuntolink:
+#     name: Suunto Movescount link
+#     url: http://suuntolink.static.movescount.com/Suuntolink_installer.dmg
+#     dest: "{{general.local_home}}/Downloads/Suuntolink_installer.dmg"
 
