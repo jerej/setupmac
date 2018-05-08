@@ -4,5 +4,12 @@
 - name: configuration
   include: configuration.yml
 
-- name: dotfiles
-  include: dotfiles.yml
+#- name: dotfiles
+#  include: dotfiles.yml
+
+- name: Vim SPF13 configuration
+  include: vim_spf13.yml 
+
+- name: Install Python modules
+  pip:
+    name: setuptools_scm,virtualenv,readline
